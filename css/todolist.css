@@ -1,0 +1,21 @@
+.todolist-page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.todolist-page-container > header {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.todolist-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    border: 1px solid #dbdbdb;
+    border-width: 1px 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+}

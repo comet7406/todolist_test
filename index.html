@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/appheader.css">
     <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="./css/welcome.css">
-    <link rel="stylesheet" href="./css/appheader.css">
+    <link rel="stylesheet" href="./css/todolist.css">
 </head>
 <body>
     <div id="root">
         <div class="container">
             <aside class="sidebar">
-                <button class="sidebar-toggle-button" onclick="sidebarToggleButtonOnClickHandle();">▶</button>
-                <h1 class="sidebar-logo">MyToDo</h1>
+                <!-- <button class="sidebar-toggle-button" onclick="sidebarToggleButtonOnClickHandle();">▶</button> -->
+                <button class="btn close-icon" onclick="sidebarToggleButtonOnClickHandle();">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h1 class="sidebar-logo">JUST DO IT</h1>
                 <ul class="sidebar-menu-list">
                     <li class="menu-items" onclick="sidebarMenuOnClickHandle(this);">시작하기</li>
                     <li class="menu-items" onclick="sidebarMenuOnClickHandle(this);">TODOLIST</li>
@@ -23,11 +28,15 @@
             </aside>
             <main class="main-container">
                 <div class="app-header-bar">
-                    <button class="btn list-bar"><i class="fa-solid fa-bars"></i></button>
+                    <div class="app-header-bar-start">
+                        <button class="btn list-bars" onclick="sidebarToggleButtonOnClickHandle();">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="welcome-page-container invisible">
                     <img src="./images/comet.png" class="logo">
-                    <button class="link-button">TO DO LIST</button>
+                    <button class="link-button" onclick="goToWriteOnClickHandle();">TO DO LIST</button>
                 </div>
                 <div class="todolist-page-container">
                     <header>
@@ -60,7 +69,10 @@
             </main>
         </div>
     </div>
+    <script src="./js/index.js"></script>
     <script src="./js/routes.js"></script>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/welcome.js"></script>
+    <script src="./js/todolist.js"></script>
 </body>
 </html>
