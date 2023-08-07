@@ -1,7 +1,7 @@
 .sidebar {
     transition: left 1s ease;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -200px;
     border-right: 1px solid #dbdbdb;
     width: 200px;

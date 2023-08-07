@@ -5,7 +5,6 @@ const sidebarToggleButtonOnClickHandle = () => {
     if(sidebar.classList.contains("isSidebarOpen")) {
         sidebar.classList.remove("isSidebarOpen");
         sidebarToggleButton.innerHTML = '▶';
-
     }else {
         sidebar.classList.add("isSidebarOpen");
         sidebarToggleButton.innerHTML = '◀';
@@ -21,7 +20,7 @@ const sidebarMenuOnClickHandle = (target) => {
             Routes.getInstance().routeState = "todolist";
             break;
     }
-
+    
     Routes.getInstance().show();
     sidebarToggleButtonOnClickHandle();
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="./css/welcome.css">
-    <link rel="stylesheet" href="./css/todolist.css">
+    <link rel="stylesheet" href="./css/appheader.css">
 </head>
 <body>
     <div id="root">
@@ -17,14 +17,17 @@
                 <button class="sidebar-toggle-button" onclick="sidebarToggleButtonOnClickHandle();">▶</button>
                 <h1 class="sidebar-logo">MyToDo</h1>
                 <ul class="sidebar-menu-list">
-                    <li class="menu-items isMenuSelected" onclick="sidebarMenuOnClickHandle(this);">시작하기</li>
+                    <li class="menu-items" onclick="sidebarMenuOnClickHandle(this);">시작하기</li>
                     <li class="menu-items" onclick="sidebarMenuOnClickHandle(this);">TODOLIST</li>
                 </ul>
             </aside>
             <main class="main-container">
+                <div class="app-header-bar">
+                    <button class="btn list-bar"><i class="fa-solid fa-bars"></i></button>
+                </div>
                 <div class="welcome-page-container invisible">
-                    <h1 class="welcome-page-title">TODOLIST</h1>
-                    <button class="write-link-button">Go to write</button>
+                    <img src="./images/comet.png" class="logo">
+                    <button class="link-button">TO DO LIST</button>
                 </div>
                 <div class="todolist-page-container">
                     <header>
@@ -47,8 +50,8 @@
                             <div class="item-right">
                                 <p class="todolist-date">2023-08-03</p>
                                 <div class="todolist-item-buttons">
-                                    <button class="btn btn-edit">수정</button>
-                                    <button class="btn btn-remove">삭제</button>
+                                    <button class="btn">수정</button>
+                                    <button class="btn">삭제</button>
                                 </div>
                             </div>
                         </li>
@@ -57,7 +60,6 @@
             </main>
         </div>
     </div>
-    <script src="./js/index.js"></script>
     <script src="./js/routes.js"></script>
     <script src="./js/sidebar.js"></script>
 </body>

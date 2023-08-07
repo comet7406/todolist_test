@@ -1,0 +1,16 @@
+.app-header-bar {
+    height: 50px;
+    background-color: rgb(246, 248, 250, 0);
+}
+
+.list-bar {
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    background-color: none;
+}
+
+.list-bar .fa-solid {
+    font-weight: 900;
+}

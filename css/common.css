@@ -12,7 +12,11 @@
     padding: 10px;
     width: 500px;
     height: 700px;
-    background-color: #fafafa;
+    background-color: #f0f8ff;
+    background: #B993D6;
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+
     overflow: hidden;
 }
 
@@ -35,13 +39,9 @@
     height: 100%;
 }
 
-.invisible {
-    display: none !important;
-}
-
 .text-input {
     outline: none;
-    border: 1px solid #dbdbdb;
+    border:1px solid #dbdbdb;
     border-radius: 4px;
     padding: 5px 20px;
 }

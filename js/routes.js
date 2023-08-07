@@ -12,21 +12,22 @@ class Routes {
 
     show() {
         this.clear();
-       
+
         switch(this.routeState) {
             case "welcome":
-                const welcomePage = document.querySelector(".welcome-page-container")
+                const welcomePage = document.querySelector(".welcome-page-container");
                 welcomePage.classList.remove("invisible");
                 break;
             case "todolist":
-                const todolistPage = document.querySelector(".todolist-page-container")
+                const todolistPage = document.querySelector("todolist-page-container");
                 todolistPage.classList.remove("invisible");
                 break;
+
         }
     }
 
     clear() {
-        const pages = document.querySelectorAll(".main-container > div")
+        const pages = document.querySelectorAll(".main-container > div");
         pages.forEach(page => {
             page.classList.add("invisible");
         })
